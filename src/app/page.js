@@ -8,8 +8,10 @@ export default function Home() {
   return (
     <div className="grid items-center justify-items-center min-h-screen">
       <Header />
-      <MainContent />
-      <Sidebar />
+      <main className="grid w-full grid-cols-1 md:grid-cols-2 justify-items-center items-center gap-4">
+        <MainContent />
+        <Sidebar />
+      </main>
       <Footer />
     </div>
   );
