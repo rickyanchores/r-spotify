@@ -5,12 +5,21 @@ import Sidebar from "./Components/Sidebar/Sidebar";
 import Footer from "./Components/Footer/Footer";
 
 
+const content = [
+  {
+    userImage: "https://rickyanchores.netlify.app/static/media/RikoAI.42d1aba710ba4d61e093.jpeg"
+  },
+  {
+    userImage: "https://rickyanchores.netlify.app/static/media/RikoAI.42d1aba710ba4d61e093.jpeg"
+  }
+]
+
 export default function Home() {
   return (
-    <div className="grid items-center justify-items-center bg-orange-600 w-screen min-h-screen p-12">
+    <div className="grid items-center justify-items-center w-screen min-h-screen">
       <Header />
-      <main className="grid w-full grid-cols-1 md:grid-cols-2 justify-items-center items-center gap-4">
-        <MainContent userName={"Riko Ancho"} userImage={"Empty"}/>
+      <main className="grid w-full grid-cols-1 md:grid-cols-2 justify-items-center items-center gap-2">
+        <MainContent userName={"Riko Ancho"} userImage={content[0].userImage}/>
         <Sidebar />
       </main>
       <Footer />
