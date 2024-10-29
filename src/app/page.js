@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div className="grid items-center justify-items-center w-screen min-h-screen">
       <Header />
-      <main className="grid w-full grid-cols-1 md:grid-cols-2 justify-items-center items-center gap-2">
+      <main className="grid w-full grid-cols-1 md:grid-cols-2 justify-items-center items-center gap-2 font-mono">
         <MainContent userName={"Riko Ancho"} userImage={content[0].userImage}/>
         <Sidebar />
       </main>
